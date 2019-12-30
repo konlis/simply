@@ -20,6 +20,23 @@ body {
 section {
   padding: 108px 0;
 }
+.splash-menu {
+  position: fixed;
+}
+.splash-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.splash-menu li a {
+  display: inline-flexbox;
+}
+#link1:target .page#link1,
+#link2:target .page,
+#link3:target .page,
+#link4:target .page {
+  transform: translateX(-190%);
+}
 .splash {
   height: 100vh;
   position: relative;

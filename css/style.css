@@ -23,6 +23,41 @@ section {
   padding: 108px 0;
 }
 
+/*Navigation*/
+header nav {
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  top: 0;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+header nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style-type: none;
+}
+
+header li a {
+  padding: 10px;
+  color: #22a6b3;
+  position: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#link1:target .page#link1,
+#link2:target .page,
+#link3:target .page,
+#link4:target .page {
+  transform: translateX(-190%);
+}
+
 /*Splash*/
 .splash {
   height: 100vh;

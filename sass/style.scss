@@ -24,9 +24,45 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 section {
     padding: 108px 0;
+}
+        /*Navigation*/
+header {
+    
+    nav {
+        
+        width: 100%;
+       
+        background-color: black;
+        z-index: 10;
+        top:0;
+        height: 50px;
+        position: sticky;
+        ul {    
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+    }
+    li a  {
+        padding: 10px;
+        color: $color-fonttitle;
+        position: center ;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+    
+    }
+}
+
+#link1:target .page#link1 ,
+#link2:target .page ,
+#link3:target .page ,
+#link4:target .page {
+  transform: translateX(-190%);
 }
         /*Splash*/
 .splash {
